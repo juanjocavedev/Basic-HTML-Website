@@ -1,53 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="utf-8">
-    <title>HTML EXAMN</title>
+    <!--SEO Meta tags-->
+    <meta charset="UTF-8">
+    <meta name="description" content="A simple HTML-only website">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <title>Basic HTML Website</title>
 </head>
 
 <body>
-
     <header>
-        <span>Juanjo Cánovas Vera</span>
+        <img src="/images/logo.jpg" alt="Logo" title="Logo Juanjocavedev" height="75px" width="75px">
+        <h4 class="name">Juanjocavedev</h4>
         <nav>
-            <a href="home.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="articles.html">Articles</a>
-            <a href="contact.html">Contact</a>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
-
     </header>
 
     <main>
         <form action="">
-
             <fieldset>
-
                 <legend>Formulario de contacto</legend>
-
                 <div>
                     <label for="name">Nombre</label>
-                    <input type="text" placeholder="Escribe tu nombre" id="name" name="name" required>
+                    <input type="text" placeholder="Escribe tu nombre" id="name" name="name" size="22" required>
                 </div>
-
-                
-
-                <label for="email">Email</label>
-                <input type="email" placeholder="Escribe tu email" id="email" name="email" required>
-
-                <label for="phone">Email</label>
-                <input type="tel" placeholder="Escribe tu telefono" id="phone" name="phone" required pattern="[0-9]{9}">
-
+                <div>
+                    <label for="surname">Apellidos</label>
+                    <input type="text" placeholder="Escribe tus apellidos" id="surname" name="surname" size="22" required>
+                </div>
+                <div>
+                    <label for="phone">Telefono</label>
+                    <input type="tel" placeholder="Escribe tu telefono" id="phone" name="phone" pattern="[0-9]{9}" size="22" required>
+                </div>
+                <div>
+                    <label for="email">Correo electronico</label>
+                    <input type="email" placeholder="Escribe tu correo electronico" id="email" name="email" size="22" required>
+                </div>
                 <div>
                     <br>
                     <button type="submit">Enviar</button>
                 </div>
-
+                <div>
+                    <button type="reset">Borrar datos</button>
+                </div>
             </fieldset>
         </form>
     </main>
-
 </body>
 
 </html>
