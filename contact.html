@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <!--SEO Meta tags-->
     <meta charset="UTF-8">
     <meta name="description" content="A simple HTML-only website">
     <meta name="viewport" content="width=device-width" initial-scale="1.0">
-    <title>Basic HTML Website</title>
+    <title>Contact - Basic HTML Website</title>
 </head>
 
 <body>
     <header>
-        <img src="/images/logo.jpg" alt="Logo" title="Logo Juanjocavedev" height="75px" width="75px">
-        <h4 class="name">Juanjocavedev</h4>
+        <img src="/images/logo.jpg" alt="Logo" title="Juanjocavedev logo" height="75px" width="75px">
+        <p>Juanjocavedev</p>
         <nav>
             <ul>
                 <li><a href="home.html">Home</a></li>
@@ -25,25 +26,30 @@
     <main>
         <form action="">
             <fieldset>
-                <legend>Formulario de contacto</legend>
+                <legend>Contact form</legend>
                 <div>
-                    <label for="name">Nombre</label>
-                    <input type="text" placeholder="Escribe tu nombre" id="name" name="name" size="22" required>
-                </div>
-                <div>
-                    <label for="surname">Apellidos</label>
-                    <input type="text" placeholder="Escribe tus apellidos" id="surname" name="surname" size="22" required>
-                </div>
-                <div>
-                    <label for="phone">Telefono</label>
-                    <input type="tel" placeholder="Escribe tu telefono" id="phone" name="phone" pattern="[0-9]{9}" size="22" required>
-                </div>
-                <div>
-                    <label for="email">Correo electronico</label>
-                    <input type="email" placeholder="Escribe tu correo electronico" id="email" name="email" size="22" required>
-                </div>
-                <div>
+                    <label for="name">Full name</label>
                     <br>
+                    <input type="text" placeholder="John Doe" id="name" name="name" size="22" pattern="[A-Za-z]"
+                        required>
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <br>
+                    <input type="tel" placeholder="654-321-012" id="phone" name="phone"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" size="22" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" placeholder="example@gmail.com" id="email" name="email" size="22" required>
+                </div>
+                <div>
+                    <label for="textarea">Message</label>
+                    <br>
+                    <textarea placeholder="Message" rows="12" cols="35"></textarea>
+                </div>
+                <div>
                     <button type="submit">Enviar</button>
                 </div>
                 <div>
@@ -53,5 +59,9 @@
         </form>
     </main>
 </body>
+
+<footer>
+    <p> &copy all rights reserved 2024</p>
+</footer>
 
 </html>
