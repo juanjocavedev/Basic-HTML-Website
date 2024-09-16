@@ -8,7 +8,6 @@
     <meta name="author" content="Juanjocavedev">
     <title>Contact - Basic HTML Website</title>
 </head>
-
 <body>
     <header>
         <img src="/images/logo.jpg" alt="Logo" title="Juanjocavedev logo" height="75px" width="75px">
@@ -22,46 +21,41 @@
             </ul>
         </nav>
     </header>
-
     <main>
-        <form action="">
+        <form action="submit_form.php" method="post" id="contact-form">
             <fieldset>
                 <legend>Contact form</legend>
-                <div>
+                <div class="name">
                     <label for="name">Full name</label>
                     <br>
-                    <input type="text" placeholder="John Doe" id="name" name="name" size="22" pattern="[A-Za-z]"
-                        required>
+                    <input type="text" placeholder="John Doe" id="name" name="name" size="22" pattern="[A-Za-zÀ-ÿ\s]+" required>
                 </div>
-                <div>
+                <div class="phone">
                     <label for="phone">Phone</label>
                     <br>
-                    <input type="tel" placeholder="654-321-012" id="phone" name="phone"
-                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" size="22" required>
+                    <input type="tel" placeholder="654-321-012" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" size="22" required>
                 </div>
-                <div>
+                <div class="email">
                     <label for="email">Email</label>
                     <br>
                     <input type="email" placeholder="example@gmail.com" id="email" name="email" size="22" required>
                 </div>
-                <div>
+                <div class="textarea">
                     <label for="textarea">Message</label>
                     <br>
                     <textarea placeholder="Message" rows="12" cols="35"></textarea>
                 </div>
-                <div>
+                <div class="submit">
                     <button type="submit">Enviar</button>
                 </div>
-                <div>
+                <div class="reset">
                     <button type="reset">Borrar datos</button>
                 </div>
             </fieldset>
         </form>
     </main>
 </body>
-
 <footer>
     <p>&copy all rights reserved 2024</p>
 </footer>
-
 </html>
